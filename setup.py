@@ -7,6 +7,7 @@ setup(
     name='pytest_yaml',
     version=__version__,
     description='This plugin is used to load yaml output to your test using pytest framework.',
+    long_description=open('README.md').read(),
     author='Jihad BENABRA',
     author_email='jihad_benabra@carrefour.com',
     url='https://github.com/Benabra/pytest_yaml',
