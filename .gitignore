@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 # ignore IntelliJ config files
 *.iml
 .idea
+=======
+# ignore vscode config files
+>>>>>>> first commit
 .vscode
 
 # ignore python files
@@ -10,4 +14,8 @@ pip-delete-this-directory.txt
 venv/
 .pytest_cache/
 *.pyc
-*.xml
+.pypirc
+.eggs
+build/
+dist/
+*.egg-info
