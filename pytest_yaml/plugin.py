@@ -2,8 +2,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-from yaml import load
 import pytest
+from yaml import load
 
 
 def pytest_addoption(parser):
@@ -18,6 +18,6 @@ def pytest_addoption(parser):
 
 
 @pytest.fixture
-def yaml_content(request):
+def yaml_output(request):
     yaml_file = request.config.getoption("yaml_file")
     return load(open(yaml_file, 'r')) if yaml_file is not None else {}
